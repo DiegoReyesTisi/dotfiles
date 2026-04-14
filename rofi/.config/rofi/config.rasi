@@ -1,0 +1,101 @@
+configuration {
+    modi: "drun,run";
+    show-icons: false;
+    terminal: "kitty";
+    drun-display-format: "{name}";
+    display-drun: ">";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+}
+
+* {
+    bg:            #000000;
+    bg-alt:        #120c00;
+    fg:            #ffb000;
+    fg-dim:        #a86f00;
+    fg-bright:     #ffd26a;
+    border-col:    #ffb000;
+
+    background-color: @bg;
+    text-color: @fg;
+}
+
+window {
+    width: 700px;
+    border: 2px;
+    border-radius: 0px;
+    border-color: @border-col;
+    background-color: @bg;
+}
+
+mainbox {
+    background-color: @bg;
+    children: [ inputbar, listview ];
+}
+
+inputbar {
+    background-color: @bg;
+    text-color: @fg;
+    border: 0px 0px 2px 0px;
+    border-color: @border-col;
+    padding: 12px;
+    children: [ prompt, entry ];
+}
+
+prompt {
+    background-color: @bg;
+    text-color: @fg-bright;
+    padding: 0px 10px 0px 0px;
+}
+
+entry {
+    background-color: @bg;
+    text-color: @fg;
+    placeholder: "type command";
+    placeholder-color: @fg-dim;
+}
+
+listview {
+    background-color: @bg;
+    columns: 1;
+    lines: 8;
+    spacing: 4px;
+    padding: 10px;
+    fixed-height: false;
+}
+
+element {
+    background-color: @bg;
+    text-color: @fg-dim;
+    padding: 8px 10px;
+    border: 0px;
+}
+
+element selected {
+    background-color: @bg-alt;
+    text-color: @fg-bright;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+element-icon {
+    background-color: inherit;
+    text-color: inherit;
+    size: 0px;
+}
+
+message {
+    background-color: @bg;
+    border: 1px 0px 0px 0px;
+    border-color: @border-col;
+}
+
+textbox {
+    background-color: @bg;
+    text-color: @fg;
+}

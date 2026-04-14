@@ -1,0 +1,62 @@
+* {
+    font: "FantasqueSansM Nerd Font Mono 16";
+    background: #000000;
+    foreground: #ffb000;
+
+    border-color: #ffb000;
+    separatorcolor: #ffb000;
+
+    text-color: #ffb000;
+}
+
+window {
+    width: 600px;
+    border: 2px;
+    border-radius: 0px;
+    background-color: #000000;
+}
+
+mainbox {
+    children: [inputbar, listview];
+}
+
+inputbar {
+    padding: 10px;
+    border: 0px 0px 2px 0px;
+    border-color: #ffb000;
+}
+
+textbox-prompt-colon {
+    expand: false;
+    str: "> ";
+    text-color: #ffcc66;
+}
+
+entry {
+    placeholder: "type command...";
+    text-color: #ffb000;
+}
+
+listview {
+    lines: 8;
+    spacing: 4px;
+    padding: 10px;
+}
+
+element {
+    padding: 6px;
+}
+
+element selected {
+    background-color: #1a1200;
+    text-color: #ffcc66;
+}
+
+element-text {
+    text-color: #cc8a00;
+}
+
+element-text selected {
+    text-color: #ffcc66;
+}
+

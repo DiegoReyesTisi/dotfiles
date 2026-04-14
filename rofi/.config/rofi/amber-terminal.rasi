@@ -1,0 +1,99 @@
+configuration {
+    modi: "drun,run";
+    show-icons: false;
+    terminal: "kitty";
+    drun-display-format: "{name}";
+    display-drun: ">";
+    disable-history: false;
+    hide-scrollbar: true;
+}
+
+* {
+    font: "FantasqueSansM Nerd Font Mono 16";
+
+    bg0: #000000ff;
+    bg1: #120c00ff;
+    fg0: #ffb000ff;
+    fg1: #cc8a00ff;
+    fg2: #ffd26aff;
+    border: #ffb000ff;
+
+    background-color: @bg0;
+    text-color: @fg0;
+}
+
+window {
+    width: 720px;
+    border: 2px;
+    border-radius: 0px;
+    border-color: @border;
+    background-color: @bg0;
+}
+
+mainbox {
+    background-color: @bg0;
+    children: [inputbar, listview];
+}
+
+inputbar {
+    background-color: @bg0;
+    text-color: @fg0;
+    border: 0px 0px 2px 0px;
+    border-color: @border;
+    padding: 12px;
+    children: [prompt, entry];
+}
+
+prompt {
+    background-color: @bg0;
+    text-color: @fg2;
+    padding: 0px 10px 0px 0px;
+}
+
+entry {
+    background-color: @bg0;
+    text-color: @fg0;
+    placeholder: "type command";
+    placeholder-color: @fg1;
+    cursor: text;
+}
+
+listview {
+    background-color: @bg0;
+    columns: 1;
+    lines: 8;
+    spacing: 4px;
+    padding: 10px;
+    fixed-height: false;
+}
+
+element {
+    background-color: @bg0;
+    text-color: @fg1;
+    padding: 8px 10px;
+}
+
+element selected {
+    background-color: @bg1;
+    text-color: @fg2;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+}
+
+element-icon {
+    background-color: transparent;
+    size: 0px;
+}
+
+textbox {
+    background-color: @bg0;
+    text-color: @fg0;
+}
+
+error-message {
+    background-color: @bg0;
+    text-color: @fg2;
+}
