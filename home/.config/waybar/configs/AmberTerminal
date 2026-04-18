@@ -6,7 +6,7 @@
 
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["custom/steam","pulseaudio", "cpu", "memory"],
+  "modules-right": ["custom/steam", "pulseaudio", "cpu", "memory", "custom/power"],
 
   "hyprland/workspaces": {
     "disable-scroll": false,
@@ -38,5 +38,11 @@
     "interval": 10,
     "on-click": "steam",
     "format": "{}"
+  },
+
+  "custom/power": {
+    "format": "⏻",
+    "tooltip": false,
+    "on-click": "~/.config/waybar/scripts/power-menu.sh"
   }
 }

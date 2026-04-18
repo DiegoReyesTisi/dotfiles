@@ -30,6 +30,12 @@ window#waybar {
 #clock,
 #pulseaudio,
 #cpu,
-#memory {
+#memory,
+#custom-steam,
+#custom-power {
   padding: 0 12px;
+}
+
+#custom-power {
+  color: #ffcc66;
 }
