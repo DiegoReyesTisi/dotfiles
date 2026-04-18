@@ -1,0 +1,7 @@
+# Local machine configs
+home/.config/hypr/current-monitor.conf
+home/.config/hypr/local.conf
+
+# Optional: cache / temp files
+*.log
+*.cache
