@@ -1,5 +1,5 @@
 # Local machine configs
-home/.config/hypr/Monitor_Profiles/Desktop.conf
+home/.config/hypr/Monitor_Profiles/default.conf
 home/.config/hypr/local.conf
 
 # Optional: cache / temp files
